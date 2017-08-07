@@ -1,0 +1,26 @@
+.span_class {
+    margin-left:20px;
+    float:left;
+    font-size:18px;
+    line-height:59px;
+    font-family: Microsoft YaHei,Arial,SimSun;
+    text-align: center;
+    width: 120px;
+}
+.span_class_active {
+    margin-left:20px;
+    float:left;
+    font-size:18px;
+    line-height:59px;
+    border-width:0 0 1px 0;
+    border-style:solid;
+    border-color:#0082dc;
+    font-family: Microsoft YaHei,Arial,SimSun;
+    text-align: center;
+    width: 120px;
+    color: #0082dc;
+}
+
+span :hover{
+    color:red;
+}

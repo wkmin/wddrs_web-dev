@@ -1,0 +1,70 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+html,body {
+	/*padding-top: 50px;*/
+	width:100%;
+	background: #ECF0F5;
+	height:100%;
+	margin:0px;
+	min-width:1200px;
+
+}
+
+
+.ul_class> li > a:hover {
+	color:#FFF;
+}
+.li_a_active{
+}
+
+.ul_class {
+	list-style-type: none;
+	color: #9db1c5;
+	padding-left:0px;
+	border-bottom: 1px solid transparent;
+	border-color: rgba(255, 255, 255, 0.05);
+	position:absolute;
+}
+
+.ul_class> li {
+	/*margin:0 auto;*/
+	height:44px;
+	font-weight: bold;
+	font-size: 17px;
+	border-top: 1px solid transparent;
+	border-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.ul_class> li>a {
+	color: #adbece;
+	width:100%;
+	line-height: 43px;
+}
+.ul_class> li>a>div>i{
+	margin-left:10px;
+	z-index:1;
+	*display: inline-block;*/
+}
+
+.ul_class> li>a>span{
+	float:left;
+	margin-left:20px;
+}
+.ul_class> li>a>div{
+	width:40px;
+	float:left;
+	height:100%;
+	border-right: 1px solid transparent;
+	border-color: rgba(255, 255, 255, 0.05);
+}
+
+.div_background{
+	height:43px;
+	width:1px;
+	z-index:1;
+	position:absolute;
+}

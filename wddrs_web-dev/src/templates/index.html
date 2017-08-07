@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>数据天空大数据系统</title>
+
+	</head>
+	<body>
+		<div style="height:50px;width:100%;background: #25313e;color: #adbece; position:fixed;z-index:10">
+			<div style="float:left;background:#2e3e4e;height:100%;width:220px; font-size:20px;font-weight: bold;">
+				<img src="static/imgs/logo.png" style="padding-left:10px;line-height:50px">
+				</img>
+				<span style="padding-top:10px;display: inline-block;">
+				管理控制台
+				</span>
+			</div>
+			<div style="float:right;width:240px;height:100%;background:#2e3e4e">
+				<span class="glyphicon glyphicon-user" style="display:inline-block;padding-left:5px;text-align:center;margin-top:15px;padding-left:30px">
+				</span>
+                {{username}}
+				<a style="text-align:center;display:inline-block;padding-left:20px;cursor: pointer;" href="/logout">
+					退出登陆
+				</a>
+
+			</div>
+
+		</div>
+		<div style="width:100%;height:100%;">
+			<div style="float:left;width:220px;height:100000px;background-color:#41586E;position:fixed;margin-top:50px;z-index:1 " id="sidebar">
+				<div style="width:220px;">
+					<ul  style="width:100%" class="ul_class">
+						<li >
+							<!--<a href="javascript:void(0);" onclick='$("#context").load("/total_data");'  class='pre_class' >-->
+							<a href="javascript:void(0);" onclick="change_a_status(this,'/total_data')"  class='pre_class' >
+								<div>
+									<div style="background:#0BE20B;" class="div_background"  ></div>
+									<i class="glyphicon glyphicon-inbox" ></i>
+								</div>
+								<span >客流管理</span>
+							</a>
+						</li>
+						<li >
+							<a href="javascript:void(0);" onclick="change_a_status(this,'/groups')"  class='pre_class' >
+								<div>
+									<div style="background:#F1F719;" class="div_background" ></div>
+									<i class="glyphicon glyphicon-tasks" ></i>
+								</div>
+								<span >设备组管理</span>
+							</a>
+						</li>
+						<li >
+							<a href="javascript:void(0);" onclick="change_a_status(this,'/total_data')"  class='pre_class' >
+								<div>
+									<div style="background:#E29595;" class="div_background" ></div>
+									<i class="glyphicon glyphicon-th" ></i>
+								</div>
+								<span >设备组管理</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div style="float:left;padding-left:240px;height:100%" id="div_context">
+				<div id="context" style="border-radius: 10px;padding-top:70px;" >
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<link href="static/css/index.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.3.1/echarts.min.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			slog_active=false
+			wd_group_active=false
+			wd_active=false
+
+			$("#div_context").width($("body").width()-260)
+            $('#context').load('/total_data')
+
+			$("a.pre_class").hover(function(){
+                    if ($(this).hasClass("li_a_active")  == false)
+                        $(this).children("div").children("div").animate({width:'40px'},100);
+			},function(){
+                    if ($(this).hasClass("li_a_active")  == false)
+                        $(this).children("div").children("div").animate({width:'1px'},100);
+			});
+
+		});
+		window.onresize=function(){
+			console.info($(window).height())
+			$("#div_context").width($("body").width()-260)
+
+		};
+        function change_a_status(which,url){
+                $("a.pre_class").children("div").children("div").animate({width:'1px'},0);
+                $("a.pre_class").removeClass("li_a_active");
+                $("a.pre_class").css("color","#adbece")
+                $("#context").load(url);
+                $(which).addClass("li_a_active");
+                $(which).children("div").children("div").animate({width:'40px'},0);
+                $(which).css("color","#FFF")
+        }
+		</script>
+
+	</body>
+</html>

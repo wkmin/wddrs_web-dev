@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style type="text/css">
+		.selected{
+			background-color:#E49B1A;
+		}
+        th{
+            background-color: #eee;
+        }
+		</style>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+
+        <script type="text/javascript" src="static/js/groups.js" charset="utf-8"></script>
+
+    </head>
+    <body>
+    <div style="width:100%;border-radius: 5px;background:#FFF; max-height:2000px;height:300px" id="div_groups_content">
+            <div style="width:100%;height:60px;font-size:20px;border-width:0 0 1px 0;border-style:solid;border-color:#b6aeae;border-top-left-radius:5px ">
+                    <span style="width:10px;height:100%;float:left;background:#2c77c2;border-top-left-radius:5px">
+                    </span>
+                    <span style="margin-left:10px;float:left;line-height:60px">
+                          设备组信息 
+                    </span>
+            </div>
+            <div style="width:100%;margin: 0 auto;margin-top:10px;" id="div_groups">
+
+                    <button type="button" class="btn btn-default " 
+                        style="float:left;margin-bottom:10px;" 
+                        onclick="open_add()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        添加设备组
+                    </button>
+                    <table id="tb_groups">
+                            <thead >
+                                <tr>
+                                    <th data-field="group_id" data-visible="false" >group</th>
+                                    <th data-field="group_name">设备组</th>
+                                    <th data-field="effectiveRange">探测距离</th>
+                                    <th data-field="repeatTime">回头客时间</th>
+                                    <th data-field="repeatTime">高频回头</th>
+                                    <th data-field="repeatTime">中频回头</th>
+                                    <th data-field="repeatTime">操作</th>
+                                </tr>
+                            </thead>
+                    </table>
+            </div>
+    </div>
+    </body>
+<html>

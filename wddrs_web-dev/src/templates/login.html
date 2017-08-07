@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>datasky系统登陆</title>
+
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="{{ url_for('static', filename = 'login.css') }}" rel="stylesheet">-->
+<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="static/js/login.js" charset="utf-8"></script>
+<!--<script type="text/javascript" src="static/jquery.json.js"></script>-->
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/dragverify.css')}}"/>
+</head>
+
+
+<body style="width:100%;height:100%;min-width: 1000px;background:url({{ url_for('static', filename = 'imgs/login_bg5.jpg') }}) no-repeat; background-size:cover;">
+    <div style="wdith:100%;background:hsla(0,0%,100%,.1);height: 60px;color: #c0c1c3;font-size: 18px; ">
+        <div style="padding-left:100px;float:left;line-height:60px">
+            数据天空
+        </div>
+        <div style="padding-right: 68px;float:right;line-height:60px">
+            登录帮助
+        </div>
+        <div style="padding-right: 68px;float:right;line-height:60px">
+            使用文档
+        </div>
+
+        <div style="padding-right: 68px;float:right;line-height:60px">
+            首页
+        </div>
+    </div>
+        <div style="margin:0 auto;margin-top:100px">
+        <div style="border-radius:5px;width:400px;background:hsla(0,0%,100%,.4);height: 400px;color: #c0c1c3;font-size: 18px;float:right;margin-right:70px ">
+            <div style="margin:0 auto;height:300px">
+                <div style="margin:0 auto;width:100px;height:60px;">
+                        <p style="line-height:60px;color: #FFFFFF;font-size: 25px;margin:0 auto;" >
+                    会员登录
+                    </p>
+                </div>
+                <div style="margin:0 auto;width:80%;height:60px">
+                        <input  type="text" id="UserName" class="form-control" placeholder="用户名" style="height:45px;">
+                </div>
+                <div style="margin:0 auto;width:80%;height:60px">
+                        <input  type="password" id="UserPw" class="form-control" placeholder="密码" style="height:45px;">
+                </div>
+                <div style="margin:0 auto;width:80%;height:40px">
+                        <div id="dragverify"></div>
+                        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+                        <script type="text/javascript" src="{{ url_for('static',filename='js/dragverify.js')}}"></script>
+                </div>
+
+                <div style="margin:0 auto;width:80%;height:30px">
+                        <label style="color:#FFFFFF;font-size:15px;float:left">
+                                <input type="checkbox" value="remember-me" > 记住我
+                        </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" onclick="login()" style="width:80%;margin:0 auto;height:45px;">登陆</button>
+                <div style="margin:0 auto;width:80%;height:40px;padding-top:10px">
+                        <label style="color:#FFFFFF;font-size:15px;float:left">
+                                创建账号
+                        </label>
+                        <label style="color:#FFFFFF;font-size:15px;float:right">
+                                忘记账号?
+                        </label>
+
+                </div>
+            <div>
+
+        </div>
+
+    </div>
+</body>
+</html>
