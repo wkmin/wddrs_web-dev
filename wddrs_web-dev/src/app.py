@@ -2,7 +2,7 @@
 #encoding:utf-8
 from flask  import Flask, session, request
 from datetime  import timedelta
-from flask.ext.session  import  Session
+# from flask.ext.session  import  Session
 import  redis
 from action.login import login
 app = Flask(__name__)

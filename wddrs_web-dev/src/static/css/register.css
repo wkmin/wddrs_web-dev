@@ -1,0 +1,93 @@
+/*注册页面部分*/
+.register{
+    width: 926px;
+    height: 440px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.register h3{
+    margin: 0;
+    padding: 0;
+    width: 888px;
+    height: 55px;
+    line-height: 55px;
+    margin-left: 18px;
+    border-bottom: 1px solid #73ACC7;
+    font-size: 16px;
+    padding-left: 18px;
+}
+.register form{
+    width: 280px;
+    height: 268px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.register p{
+    margin-bottom: 10px;
+}
+.register form p:nth-child(1) input,
+.register form p:nth-child(2) input,
+.register form p:nth-child(3) input,
+.register form p:nth-child(4) input{
+    width: 100%;
+    height: 37px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.register form p:nth-child(5) input:nth-child(1){
+    width: 170px;
+    height: 37px;
+}
+.register form p:nth-child(5) input:nth-child(2){
+    width: 77px;
+    height: 37px;
+    float: right;
+    background-color: #fff;
+    border: none;
+    color: #019FE8;
+    border: 1px solid #019FE8;
+    border-radius: 3px;
+    outline: none;
+}
+.register form p:nth-child(1) input,
+.register form p:nth-child(2) input,
+.register form p:nth-child(3) input,
+.register form p:nth-child(4) input{
+    float: left;
+}
+.register form p span{
+    font-size: 14px;
+    color: #D9D9D9;
+}
+.register form p:nth-child(6) input{
+    width: 100%;
+    height: 37px;
+    outline: none;
+    background-color: #F1F1F1;
+    color: #C4C4C4;
+    border: none;
+    padding-left: 0;
+}
+.glyphicon-user,
+.glyphicon-phone,
+.glyphicon-lock{
+    float: left;
+    margin-top: -40px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.glyphicon-file{
+    margin-right: 50px;
+}
+.glyphicon-remove-circle,
+.glyphicon-eye-open{
+    float: right;
+    margin-top: -40px;
+}
+.glyphicon-remove-circle{
+    margin-right: 30px;
+}
+.glyphicon-eye-open{
+    margin-right: 10px;
+}

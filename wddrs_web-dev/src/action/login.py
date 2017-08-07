@@ -16,3 +16,6 @@ def total_data():
 @login.route('/groups')
 def group():
     return render_template('groups.html')
+@login.route('/register')
+def register():
+    return render_template('register.html')

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>注册</title>
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/css/register.css"/>
+</head>
+<body style="width:100%;height:100%;min-width: 1000px;background:url({{ url_for('static', filename = 'imgs/login_bg5.jpg') }}) no-repeat; background-size:cover;">
+<!--头部部分--
+<div class="header clearfix">
+    <div class="container">
+        <div class="header-log">
+            <img src="images/19912659_r2_c2.jpg" alt=""/>
+        </div>
+        <div class="header-register">
+            <input type="button" value="登录"/>
+        </div>
+    </div>
+</div>
+-->
+<!--注册部分-->
+<div class="register" style="border-radius:5px;width:450px;background:hsla(0,0%,100%,.4);height: 500px;color: #c0c1c3;font-size: 18px ">
+    <h3>注册新用户</h3>
+    <form action="">
+        <p><input style="font-size:16px;width:280px" type="text" placeholder="请输入手机号"/><span class="glyphicon glyphicon-phone"></span></p>
+        <p>
+            <input style="font-size:16px;width:280px" type="password" placeholder="请输入密码"/>
+            <span class="glyphicon glyphicon-lock"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+        </p>
+        <p>
+            <input style="font-size:16px;width:280px" type="password" placeholder="请再次确认密码"/>
+            <span class="glyphicon glyphicon-lock"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+        </p>
+        <p>
+            <input style="font-size:16px;width:280px" type="text" placeholder="请输入您姓名"/>
+            <span class="glyphicon glyphicon-user"></span>
+        </p>
+        <p style="display:inline-block">
+            <input style="font-size:16px;width:180px" type="text" placeholder="请输入验证码"/>
+            <input style="width:100px" type="button" value="获取验证码"/>
+        </p>
+        <p><input style="background-color: blue;width:100%;margin:0 auto;height:45px;" type="submit" value="注册"/></p>
+    </form>
+</div>
+<!--底部部分--
+<div class="footer">
+    <div class="container">
+        <ul class="company">
+            <li><a href="#">公司概况</a></li>
+            <li><a href="#">资质荣誉</a></li>
+            <li><a href="#">招纳贤士</a></li>
+        </ul>
+        <p class="address"><span>地址：北京市海淀区西二旗大街39号中恒博瑞大厦</span><span style="margin-left: 10px;">电话：010-82781699</span><span style="margin-left: 10px;">网址：www.joinbright.com</span></p>
+        <ul class="about">
+            <li><img src="images/1.jpg" alt=""/></li>
+            <li><a href="#">关于中恒博瑞</a></li>
+            <li><a href="#">关于f1平台</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li><a href="#">隐私政策</a></li>
+        </ul>
+        <span class="copyright">
+            <span style="margin-right: 20px;">|</span>
+            <span>中恒博瑞公司版权所有◎1997-2014</span>
+            <span>Tel：010-82781699</span>
+        </span>
+    </div>
+</div>
+-->
+</body>
+</html>
+

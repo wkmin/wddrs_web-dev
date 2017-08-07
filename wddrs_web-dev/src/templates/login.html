@@ -13,6 +13,7 @@
 <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="static/js/login.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/register.js" charset="utf-8"></script>
 <!--<script type="text/javascript" src="static/jquery.json.js"></script>-->
 
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/dragverify.css')}}"/>
@@ -62,9 +63,9 @@
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" onclick="login()" style="width:80%;margin:0 auto;height:45px;">登陆</button>
                 <div style="margin:0 auto;width:80%;height:40px;padding-top:10px">
-                        <label style="color:#FFFFFF;font-size:15px;float:left">
+                        <button class="btn btn-sm btn-primary" onclick="register()" style="color:#FFFFFF;font-size:15px;float:left">
                                 创建账号
-                        </label>
+                        </button>
                         <label style="color:#FFFFFF;font-size:15px;float:right">
                                 忘记账号?
                         </label>
